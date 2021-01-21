@@ -1,8 +1,7 @@
 //
 //  AvacyPopup.swift
-//  AvacyCMPTest
+//  AvacyCMP
 //
-//  Created by Luciano Ollio on 19/01/2021.
 //
 
 import Foundation
@@ -36,11 +35,20 @@ class AvacyPopup {
     }()
     
     private var myTargetView: UIView?
+    private static var url: String?
     var parentViewController:UIViewController?
     
-    func tryToLoadWebView(on viewController: UIViewController){
-        let url = URL(string: "https://avacy-banner-d24ozpfr4.vercel.app/demos/rai-b.html")
-        //let url = URL(string: "https://posytron.com/avacy.html")
+    //initial url configuration
+    static func configure(url:String) {
+        AvacyPopup.url = url
+    }
+    
+    /** Method to run on root view controller that check for update on privacy policy */
+    func startCheck(on viewController: UIViewController){
+        guard let urlString = AvacyPopup.url else {
+            return
+        }
+        let url = URL(string: urlString)
         let request = URLRequest(url: url!)
         let privacyVC = PrivacyViewController()
         let contentController = WKUserContentController()
@@ -50,11 +58,11 @@ class AvacyPopup {
         config.userContentController = contentController
         webView = WKWebView(frame: .zero, configuration: config)
         webView.layer.masksToBounds = true
-        
         webView.load(request)
         parentViewController = viewController
     }
     
+    /** Method to show privacy popup created from startCheck */
     func showAlert(){
         guard let targetView = parentViewController?.view else {
             return
@@ -68,10 +76,6 @@ class AvacyPopup {
         alertView.addSubview(button)
         
         self.alertView.center = targetView.center
-//        button.setTitle("Dismiss", for: .normal)
-//        button.setTitleColor(.link, for: .normal)
-//        button.addTarget(self, action: #selector(dismiss), for: .touchUpInside)
-//        alertView.addSubview(button)
         webView.frame = CGRect(x: 0, y: 0, width: alertView.frame.size.width, height: alertView.frame.size.height)
         alertView.addSubview(webView)
         
@@ -84,6 +88,7 @@ class AvacyPopup {
         }
     }
     
+    /** Method to destroy privacy popup */
     @objc func dismiss(){
         guard let targetView = myTargetView else {
             return
@@ -98,6 +103,8 @@ class AvacyPopup {
             }
         }
     }
+   
+    /** method to read from UserDefault */
     func read(key: String) -> String{
         let preferences = UserDefaults.standard
         if preferences.string(forKey: key) != nil {
@@ -105,7 +112,9 @@ class AvacyPopup {
         }
         return "";
     }
-    func write(key:String,value:String) -> String{
+    
+    /** Method to write to UserDefault */
+    func write(key:String,value:Any) -> String{
         let preferences = UserDefaults.standard
         preferences.setValue(value, forKeyPath: key)
         //  Save to disk
@@ -115,6 +124,17 @@ class AvacyPopup {
         }
         return preferences.string(forKey: key) ?? ""
     }
+    
+    /** Method for execute javascritp on webWiev */
+    func evaluateJavascritp(javascript: String) {
+        webView.evaluateJavaScript(javascript) { (result, error) in
+            if error != nil {
+                //print(result)
+            }
+        }
+    }
+    
+    
     func showAlertResponse(message: String) {
         let alertController = UIAlertController(title: "Avacy", message: message, preferredStyle: UIAlertController.Style.alert)
         let alertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
@@ -122,3 +142,4 @@ class AvacyPopup {
         parentViewController?.present(alertController, animated: true,completion: nil)
     }
 }
+
