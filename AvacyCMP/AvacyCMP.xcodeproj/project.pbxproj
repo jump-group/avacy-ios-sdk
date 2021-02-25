@@ -14,6 +14,7 @@
 		1C283B1525B86E3B000573F1 /* AvacyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1325B86E3B000573F1 /* AvacyPopup.swift */; };
 		1C283B1B25B86E58000573F1 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */; };
 		1C283B1C25B86E58000573F1 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */; };
+		1C363DBB25C965A8003BEF0C /* OnCMPReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		1C283B0725B84796000573F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C283B1325B86E3B000573F1 /* AvacyPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvacyPopup.swift; sourceTree = "<group>"; };
 		1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnCMPReady.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		1C283AF925B84796000573F1 /* AvacyCMP */ = {
 			isa = PBXGroup;
 			children = (
+				1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */,
 				1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */,
 				1C283B1325B86E3B000573F1 /* AvacyPopup.swift */,
 				1C283AFA25B84796000573F1 /* AvacyCMP.h */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C283B1425B86E3B000573F1 /* AvacyPopup.swift in Sources */,
+				1C363DBB25C965A8003BEF0C /* OnCMPReady.swift in Sources */,
 				1C283B1B25B86E58000573F1 /* PrivacyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

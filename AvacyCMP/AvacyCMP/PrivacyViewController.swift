@@ -2,46 +2,14 @@
 //  PrivacyViewController.swift
 //  AvacyCMPTest
 //
-//  Created by Luciano Ollio on 12/01/2021.
-//
 
 import UIKit
 import WebKit
 
 class PrivacyViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,WKScriptMessageHandler {
-//    var webView: WKWebView!
-//    var url = ""
-    var avacy:AvacyPopup?
-    
-//    @IBOutlet weak var contentView: UIView!
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//            //let heightConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
-//            //view.addConstraints([ heightConstraint])
-//        // Do any additional setup after loading the view.
-//    }
-    
-//    override func loadView() {
-//        super.loadView()
-//    }
 
-//    @IBAction func closeButtonClicked(_ sender: Any) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        //self.view.isHidden = true
-//        //loadUrl()
-//    }
-//
-//    func loadUrl(){
-//        prepareWebView(url: url)
-//    }
-    
-//    func prepareWebView(url: String){
-//        let url = URL(string: self.url)!
-//        webView.load(URLRequest(url: url))
-//    }
+    var avacy:AvacyCMP?
+    var listener: OnCMPReady?
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         //This function handles the events coming from javascript. We'll configure the javascript side of this later.
@@ -54,15 +22,25 @@ class PrivacyViewController: UIViewController, WKNavigationDelegate, WKUIDelegat
             guard let key = body["key"] as? String else { return }
             let message = "Comando ricevuto: \(command) Chiave: \(key)"
             let read = avacy?.read(key: key)
-            print("read \(read)")
+            let callback = body["callback"] as? String ?? ""
+            if callback != ""{
+                let js = "\(callback)('\(read ?? "")')"
+                avacy?.evaluateJavascritp(javascript: js)
+            }
             avacy?.showAlertResponse(message: message)
             //todo evaluateJavascript
         case "write":
             let key = body["key"] as? String ?? ""
-            let value = body["value"] as? String ?? ""
+            let bodyValue = body["value"] as? String ?? ""
+            let value = String(describing: bodyValue)
             let message = "Comando ricevuto: \(command) Chiave: \(key) Valore: \(value)"
             let write = avacy?.write(key: key, value: value)
-            print("write \(write)")
+            let callback = body["callback"] as? String ?? ""
+            if callback != ""{
+                let js = "\(callback)('\(write ?? "")')"
+                avacy?.evaluateJavascritp(javascript: js)
+            }
+            print("write \(message)")
             avacy?.showAlertResponse(message: message)
         case "show":
             let message = "Comando ricevuto: \(command)"
@@ -72,10 +50,31 @@ class PrivacyViewController: UIViewController, WKNavigationDelegate, WKUIDelegat
             let message = "Comando ricevuto: \(command)"
             avacy?.showAlertResponse(message: message)
             avacy?.dismiss()
-            //avacy.show()
-            //showAlert(message: message)
-            //self.dismiss(animated: true, completion: nil)
             return
+        case "readAll":
+            let callback = body["callback"] as? String ?? ""
+            let message = "Comando ricevuto: \(command)"
+            let read = avacy?.readAll()
+            //print("read \(read)")
+            if callback != ""{
+                let js = "\(callback)('\(read ?? "")')"
+                avacy?.evaluateJavascritp(javascript: js)
+            }
+            avacy?.showAlertResponse(message: message)
+        case "writeAll":
+            let key = body["key"] as? String ?? ""
+//          let value = "\(body["value"] ?? "")"
+            let bodyValue = body["values"] as? String ?? ""
+            let value = String(describing: bodyValue)
+            let message = "Comando ricevuto: \(command) Chiave: \(key) Valore: \(value)"
+            let write = avacy?.writeAll(values: value)
+            let callback = body["callback"] as? String ?? ""
+            if callback != ""{
+                let js = "\(callback)('\(write ?? "")')"
+                avacy?.evaluateJavascritp(javascript: js)
+            }
+            print("write \(message)")
+            avacy?.showAlertResponse(message: message)
         default:
             print("Unrecognized command")
             //
@@ -84,8 +83,16 @@ class PrivacyViewController: UIViewController, WKNavigationDelegate, WKUIDelegat
       }
       
       func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        //This function is called when the webview finishes navigating to the webpage.
-        //We use this to send data to the webview when it's loaded.
+        if((listener) != nil){
+            listener?.onSuccess()
+        }
       }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        if((listener) != nil){
+            listener?.onError(error: error.localizedDescription)
+        }
+    }
    
 }
+
