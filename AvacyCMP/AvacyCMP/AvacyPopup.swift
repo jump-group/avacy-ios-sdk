@@ -134,9 +134,11 @@ public class AvacyCMP {
         let preferences = UserDefaults.standard.dictionaryRepresentation()
         var resultDictinary = [String: String]()
         for (key, value) in preferences {
-            let keyToSave = String(describing: key)
-            let valueToSave = String(describing: value)
-            resultDictinary[keyToSave] = valueToSave
+            if(key.contains("IAB") || key.contains("OIL")){
+                let keyToSave = String(describing: key)
+                let valueToSave = value as? String ?? ""
+                resultDictinary[keyToSave] = valueToSave
+            }
         }
         return jsonEncode(obj: resultDictinary);
         

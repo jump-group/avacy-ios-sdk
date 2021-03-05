@@ -16,17 +16,17 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AvacyCmpSdk"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of AvacyCmpSdk."
+  spec.version      = "1.0.0"
+  spec.summary      = "AvacyCmpSdk is the iOS library for the Smart Consent Solution provided by Avacy"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A short description of AvacyCmpSdk."
+  spec.description  = "AvacyCmpSdk is the iOS library for the Smart Consent Solution provided by Avacy"
 
-  spec.homepage     = "http://EXAMPLE/AvacyCmpSdk"
+  spec.homepage     = "https://avacysolution.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Luciano Ollio" => "luciano.ollio@movibell.com" }
+  spec.author             = { "Avacy" => "luciano.ollio@movibell.com" }
   # Or just: spec.author    = "Luciano Ollio"
   # spec.authors            = { "Luciano Ollio" => "luciano.ollio@movibell.com" }
   # spec.social_media_url   = "https://twitter.com/Luciano Ollio"
