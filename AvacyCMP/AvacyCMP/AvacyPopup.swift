@@ -159,7 +159,7 @@ public class AvacyCMP {
     func writeAll(values: String) -> String{
         let valuesToWrite = jsonDecode(json: values)
         for (key, value) in valuesToWrite {
-            let valueToSave = String(describing: value)
+            let valueToSave = value as? String ?? ""
             write(key: key, value: valueToSave)
         }
         return values
