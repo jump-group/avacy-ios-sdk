@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AvacyCmpSdk"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "AvacyCmpSdk iOS library"
 
   # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Avacy" => "web@jumpgroup.it" }
+  spec.author             = { "JumpGroup" => "web@jumpgroup.it" }
   # Or just: spec.author    = "JumpGroup"
   # spec.authors            = { "JumpGroup" => "web@jumpgroup.it" }
 
