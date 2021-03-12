@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "AvacyCmpSdk"
   spec.version      = "1.0.0"
-  spec.summary      = "AvacyCmpSdk is the iOS library for the Smart Consent Solution provided by Avacy"
+  spec.summary      = "AvacyCmpSdk iOS library"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AvacyCMP", "AvacyCMP/**/*.{h,m}"
+  spec.source_files  = "AvacyCMP", "AvacyCMP/**"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
