@@ -51,10 +51,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Avacy" => "luciano.ollio@movibell.com" }
-  # Or just: spec.author    = "Luciano Ollio"
-  # spec.authors            = { "Luciano Ollio" => "luciano.ollio@movibell.com" }
-  # spec.social_media_url   = "https://twitter.com/Luciano Ollio"
+  spec.author             = { "Avacy" => "web@jumpgroup.it" }
+  # Or just: spec.author    = "JumpGroup"
+  # spec.authors            = { "JumpGroup" => "web@jumpgroup.it" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://glupopos@bitbucket.org/posytron-com/jumpgroup-sdkavacy-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/jump-group/avacy-ios-sdk.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
