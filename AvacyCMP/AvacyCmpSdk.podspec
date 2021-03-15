@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AvacyCmpSdk"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "AvacyCmpSdk iOS library"
 
   # This description is used to generate tags and improve search results.
@@ -61,8 +61,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.ios.deployment_target = "12.1"
+  spec.swift_version = "5.3"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -89,7 +89,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "AvacyCMP", "AvacyCMP/**/*.{h,m}", "AvacyCMP/**/*.swift"
-  spec.exclude_files = "Classes/Exclude"
+  spec.exclude_files = "Classes/Exclude","AvacyCMP/AvacyCMPTests"
+  spec.swift_versions = "5.0"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -113,7 +114,8 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+  spec.library = "AvacyCmp"
+  spec.frameworks = "XCTest"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -131,5 +133,8 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
