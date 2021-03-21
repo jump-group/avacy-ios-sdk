@@ -1,14 +1,14 @@
 //
-//  AvacyCMPTests.swift
-//  AvacyCMPTests
+//  AvacyCmpSdkTests.swift
+//  AvacyCmpSdkTests
 //
-//  Created by Luciano Ollio on 20/01/2021.
+//  Created by Luciano Ollio on 21/03/2021.
 //
 
 import XCTest
-@testable import AvacyCMP
+@testable import AvacyCmpSdk
 
-class AvacyCMPTests: XCTestCase {
+class AvacyCmpSdkTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

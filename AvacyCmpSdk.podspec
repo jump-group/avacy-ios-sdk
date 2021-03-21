@@ -88,8 +88,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AvacyCMP", "AvacyCMP/**/*.{h,m}", "AvacyCMP/**/*.swift"
-  spec.exclude_files = "Classes/Exclude","AvacyCMP/AvacyCMPTests"
+  spec.source_files  = "**/*.{h,m,swift}"
+  spec.exclude_files = "Classes/Exclude"
   spec.swift_versions = "5.0"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -114,7 +114,7 @@ Pod::Spec.new do |spec|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-  spec.library = "AvacyCmp"
+  spec.library = "AvacyCmpSdk"
   spec.frameworks = "XCTest"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"

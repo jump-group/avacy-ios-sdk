@@ -7,165 +7,166 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C283B0125B84796000573F1 /* AvacyCMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C283AF725B84796000573F1 /* AvacyCMP.framework */; };
-		1C283B0625B84796000573F1 /* AvacyCMPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B0525B84796000573F1 /* AvacyCMPTests.swift */; };
-		1C283B0825B84796000573F1 /* AvacyCMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C283AFA25B84796000573F1 /* AvacyCMP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C283B1425B86E3B000573F1 /* AvacyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1325B86E3B000573F1 /* AvacyPopup.swift */; };
-		1C283B1525B86E3B000573F1 /* AvacyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1325B86E3B000573F1 /* AvacyPopup.swift */; };
-		1C283B1B25B86E58000573F1 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */; };
-		1C283B1C25B86E58000573F1 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */; };
-		1C363DBB25C965A8003BEF0C /* OnCMPReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */; };
+		1CBD8C212607B12200EF04FD /* AvacyCmpSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD8C172607B12100EF04FD /* AvacyCmpSdk.framework */; };
+		1CBD8C262607B12200EF04FD /* AvacyCmpSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C252607B12200EF04FD /* AvacyCmpSdkTests.swift */; };
+		1CBD8C282607B12200EF04FD /* AvacyCmpSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBD8C1A2607B12100EF04FD /* AvacyCmpSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CBD8C342607B15F00EF04FD /* AvacyCMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C332607B15F00EF04FD /* AvacyCMP.swift */; };
+		1CBD8C352607B15F00EF04FD /* AvacyCMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C332607B15F00EF04FD /* AvacyCMP.swift */; };
+		1CBD8C392607B17B00EF04FD /* OnCMPReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C382607B17B00EF04FD /* OnCMPReady.swift */; };
+		1CBD8C3A2607B17B00EF04FD /* OnCMPReady.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C382607B17B00EF04FD /* OnCMPReady.swift */; };
+		1CBD8C3E2607B19000EF04FD /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C3D2607B19000EF04FD /* PrivacyViewController.swift */; };
+		1CBD8C3F2607B19000EF04FD /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD8C3D2607B19000EF04FD /* PrivacyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C283B0225B84796000573F1 /* PBXContainerItemProxy */ = {
+		1CBD8C222607B12200EF04FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1C283AEE25B84796000573F1 /* Project object */;
+			containerPortal = 1CBD8C0E2607B12100EF04FD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C283AF625B84796000573F1;
-			remoteInfo = AvacyCMP;
+			remoteGlobalIDString = 1CBD8C162607B12100EF04FD;
+			remoteInfo = AvacyCmpSdk;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C283AF725B84796000573F1 /* AvacyCMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AvacyCMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C283AFA25B84796000573F1 /* AvacyCMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvacyCMP.h; sourceTree = "<group>"; };
-		1C283AFB25B84796000573F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C283B0025B84796000573F1 /* AvacyCMPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvacyCMPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C283B0525B84796000573F1 /* AvacyCMPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvacyCMPTests.swift; sourceTree = "<group>"; };
-		1C283B0725B84796000573F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C283B1325B86E3B000573F1 /* AvacyPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvacyPopup.swift; sourceTree = "<group>"; };
-		1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
-		1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnCMPReady.swift; sourceTree = "<group>"; };
+		1CBD8C172607B12100EF04FD /* AvacyCmpSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AvacyCmpSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBD8C1A2607B12100EF04FD /* AvacyCmpSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvacyCmpSdk.h; sourceTree = "<group>"; };
+		1CBD8C1B2607B12100EF04FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBD8C202607B12200EF04FD /* AvacyCmpSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvacyCmpSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBD8C252607B12200EF04FD /* AvacyCmpSdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvacyCmpSdkTests.swift; sourceTree = "<group>"; };
+		1CBD8C272607B12200EF04FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBD8C332607B15F00EF04FD /* AvacyCMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvacyCMP.swift; sourceTree = "<group>"; };
+		1CBD8C382607B17B00EF04FD /* OnCMPReady.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnCMPReady.swift; sourceTree = "<group>"; };
+		1CBD8C3D2607B19000EF04FD /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C283AF425B84796000573F1 /* Frameworks */ = {
+		1CBD8C142607B12100EF04FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C283AFD25B84796000573F1 /* Frameworks */ = {
+		1CBD8C1D2607B12200EF04FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C283B0125B84796000573F1 /* AvacyCMP.framework in Frameworks */,
+				1CBD8C212607B12200EF04FD /* AvacyCmpSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C283AED25B84795000573F1 = {
+		1CBD8C0D2607B12100EF04FD = {
 			isa = PBXGroup;
 			children = (
-				1C283AF925B84796000573F1 /* AvacyCMP */,
-				1C283B0425B84796000573F1 /* AvacyCMPTests */,
-				1C283AF825B84796000573F1 /* Products */,
+				1CBD8C192607B12100EF04FD /* AvacyCmpSdk */,
+				1CBD8C242607B12200EF04FD /* AvacyCmpSdkTests */,
+				1CBD8C182607B12100EF04FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1C283AF825B84796000573F1 /* Products */ = {
+		1CBD8C182607B12100EF04FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C283AF725B84796000573F1 /* AvacyCMP.framework */,
-				1C283B0025B84796000573F1 /* AvacyCMPTests.xctest */,
+				1CBD8C172607B12100EF04FD /* AvacyCmpSdk.framework */,
+				1CBD8C202607B12200EF04FD /* AvacyCmpSdkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C283AF925B84796000573F1 /* AvacyCMP */ = {
+		1CBD8C192607B12100EF04FD /* AvacyCmpSdk */ = {
 			isa = PBXGroup;
 			children = (
-				1C363DBA25C965A8003BEF0C /* OnCMPReady.swift */,
-				1C283B1A25B86E58000573F1 /* PrivacyViewController.swift */,
-				1C283B1325B86E3B000573F1 /* AvacyPopup.swift */,
-				1C283AFA25B84796000573F1 /* AvacyCMP.h */,
-				1C283AFB25B84796000573F1 /* Info.plist */,
+				1CBD8C1A2607B12100EF04FD /* AvacyCmpSdk.h */,
+				1CBD8C1B2607B12100EF04FD /* Info.plist */,
+				1CBD8C332607B15F00EF04FD /* AvacyCMP.swift */,
+				1CBD8C382607B17B00EF04FD /* OnCMPReady.swift */,
+				1CBD8C3D2607B19000EF04FD /* PrivacyViewController.swift */,
 			);
-			path = AvacyCMP;
+			path = AvacyCmpSdk;
 			sourceTree = "<group>";
 		};
-		1C283B0425B84796000573F1 /* AvacyCMPTests */ = {
+		1CBD8C242607B12200EF04FD /* AvacyCmpSdkTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C283B0525B84796000573F1 /* AvacyCMPTests.swift */,
-				1C283B0725B84796000573F1 /* Info.plist */,
+				1CBD8C252607B12200EF04FD /* AvacyCmpSdkTests.swift */,
+				1CBD8C272607B12200EF04FD /* Info.plist */,
 			);
-			path = AvacyCMPTests;
+			path = AvacyCmpSdkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C283AF225B84796000573F1 /* Headers */ = {
+		1CBD8C122607B12100EF04FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C283B0825B84796000573F1 /* AvacyCMP.h in Headers */,
+				1CBD8C282607B12200EF04FD /* AvacyCmpSdk.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1C283AF625B84796000573F1 /* AvacyCMP */ = {
+		1CBD8C162607B12100EF04FD /* AvacyCmpSdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C283B0B25B84796000573F1 /* Build configuration list for PBXNativeTarget "AvacyCMP" */;
+			buildConfigurationList = 1CBD8C2B2607B12200EF04FD /* Build configuration list for PBXNativeTarget "AvacyCmpSdk" */;
 			buildPhases = (
-				1C283AF225B84796000573F1 /* Headers */,
-				1C283AF325B84796000573F1 /* Sources */,
-				1C283AF425B84796000573F1 /* Frameworks */,
-				1C283AF525B84796000573F1 /* Resources */,
+				1CBD8C122607B12100EF04FD /* Headers */,
+				1CBD8C132607B12100EF04FD /* Sources */,
+				1CBD8C142607B12100EF04FD /* Frameworks */,
+				1CBD8C152607B12100EF04FD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AvacyCMP;
-			productName = AvacyCMP;
-			productReference = 1C283AF725B84796000573F1 /* AvacyCMP.framework */;
+			name = AvacyCmpSdk;
+			productName = AvacyCmpSdk;
+			productReference = 1CBD8C172607B12100EF04FD /* AvacyCmpSdk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1C283AFF25B84796000573F1 /* AvacyCMPTests */ = {
+		1CBD8C1F2607B12200EF04FD /* AvacyCmpSdkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C283B0E25B84796000573F1 /* Build configuration list for PBXNativeTarget "AvacyCMPTests" */;
+			buildConfigurationList = 1CBD8C2E2607B12200EF04FD /* Build configuration list for PBXNativeTarget "AvacyCmpSdkTests" */;
 			buildPhases = (
-				1C283AFC25B84796000573F1 /* Sources */,
-				1C283AFD25B84796000573F1 /* Frameworks */,
-				1C283AFE25B84796000573F1 /* Resources */,
+				1CBD8C1C2607B12200EF04FD /* Sources */,
+				1CBD8C1D2607B12200EF04FD /* Frameworks */,
+				1CBD8C1E2607B12200EF04FD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C283B0325B84796000573F1 /* PBXTargetDependency */,
+				1CBD8C232607B12200EF04FD /* PBXTargetDependency */,
 			);
-			name = AvacyCMPTests;
-			productName = AvacyCMPTests;
-			productReference = 1C283B0025B84796000573F1 /* AvacyCMPTests.xctest */;
+			name = AvacyCmpSdkTests;
+			productName = AvacyCmpSdkTests;
+			productReference = 1CBD8C202607B12200EF04FD /* AvacyCmpSdkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1C283AEE25B84796000573F1 /* Project object */ = {
+		1CBD8C0E2607B12100EF04FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					1C283AF625B84796000573F1 = {
+					1CBD8C162607B12100EF04FD = {
 						CreatedOnToolsVersion = 12.1;
 						LastSwiftMigration = 1210;
 					};
-					1C283AFF25B84796000573F1 = {
+					1CBD8C1F2607B12200EF04FD = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
-			buildConfigurationList = 1C283AF125B84796000573F1 /* Build configuration list for PBXProject "AvacyCMP" */;
+			buildConfigurationList = 1CBD8C112607B12100EF04FD /* Build configuration list for PBXProject "AvacyCmpSdk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,26 +174,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 1C283AED25B84795000573F1;
-			productRefGroup = 1C283AF825B84796000573F1 /* Products */;
+			mainGroup = 1CBD8C0D2607B12100EF04FD;
+			productRefGroup = 1CBD8C182607B12100EF04FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C283AF625B84796000573F1 /* AvacyCMP */,
-				1C283AFF25B84796000573F1 /* AvacyCMPTests */,
+				1CBD8C162607B12100EF04FD /* AvacyCmpSdk */,
+				1CBD8C1F2607B12200EF04FD /* AvacyCmpSdkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C283AF525B84796000573F1 /* Resources */ = {
+		1CBD8C152607B12100EF04FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C283AFE25B84796000573F1 /* Resources */ = {
+		1CBD8C1E2607B12200EF04FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,38 +203,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C283AF325B84796000573F1 /* Sources */ = {
+		1CBD8C132607B12100EF04FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C283B1425B86E3B000573F1 /* AvacyPopup.swift in Sources */,
-				1C363DBB25C965A8003BEF0C /* OnCMPReady.swift in Sources */,
-				1C283B1B25B86E58000573F1 /* PrivacyViewController.swift in Sources */,
+				1CBD8C342607B15F00EF04FD /* AvacyCMP.swift in Sources */,
+				1CBD8C392607B17B00EF04FD /* OnCMPReady.swift in Sources */,
+				1CBD8C3E2607B19000EF04FD /* PrivacyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C283AFC25B84796000573F1 /* Sources */ = {
+		1CBD8C1C2607B12200EF04FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C283B0625B84796000573F1 /* AvacyCMPTests.swift in Sources */,
-				1C283B1525B86E3B000573F1 /* AvacyPopup.swift in Sources */,
-				1C283B1C25B86E58000573F1 /* PrivacyViewController.swift in Sources */,
+				1CBD8C262607B12200EF04FD /* AvacyCmpSdkTests.swift in Sources */,
+				1CBD8C3A2607B17B00EF04FD /* OnCMPReady.swift in Sources */,
+				1CBD8C352607B15F00EF04FD /* AvacyCMP.swift in Sources */,
+				1CBD8C3F2607B19000EF04FD /* PrivacyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C283B0325B84796000573F1 /* PBXTargetDependency */ = {
+		1CBD8C232607B12200EF04FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1C283AF625B84796000573F1 /* AvacyCMP */;
-			targetProxy = 1C283B0225B84796000573F1 /* PBXContainerItemProxy */;
+			target = 1CBD8C162607B12100EF04FD /* AvacyCmpSdk */;
+			targetProxy = 1CBD8C222607B12200EF04FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C283B0925B84796000573F1 /* Debug */ = {
+		1CBD8C292607B12200EF04FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		1C283B0A25B84796000573F1 /* Release */ = {
+		1CBD8C2A2607B12200EF04FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +357,7 @@
 			};
 			name = Release;
 		};
-		1C283B0C25B84796000573F1 /* Debug */ = {
+		1CBD8C2C2607B12200EF04FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -364,24 +366,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AvacyCMP/Info.plist;
+				INFOPLIST_FILE = AvacyCmpSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCMP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCmpSdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1C283B0D25B84796000573F1 /* Release */ = {
+		1CBD8C2D2607B12200EF04FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -390,52 +391,51 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AvacyCMP/Info.plist;
+				INFOPLIST_FILE = AvacyCmpSdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCMP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCmpSdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		1C283B0F25B84796000573F1 /* Debug */ = {
+		1CBD8C2F2607B12200EF04FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AvacyCMPTests/Info.plist;
+				INFOPLIST_FILE = AvacyCmpSdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCMPTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCmpSdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1C283B1025B84796000573F1 /* Release */ = {
+		1CBD8C302607B12200EF04FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AvacyCMPTests/Info.plist;
+				INFOPLIST_FILE = AvacyCmpSdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCMPTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.posytron.AvacyCmpSdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,34 +445,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C283AF125B84796000573F1 /* Build configuration list for PBXProject "AvacyCMP" */ = {
+		1CBD8C112607B12100EF04FD /* Build configuration list for PBXProject "AvacyCmpSdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C283B0925B84796000573F1 /* Debug */,
-				1C283B0A25B84796000573F1 /* Release */,
+				1CBD8C292607B12200EF04FD /* Debug */,
+				1CBD8C2A2607B12200EF04FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C283B0B25B84796000573F1 /* Build configuration list for PBXNativeTarget "AvacyCMP" */ = {
+		1CBD8C2B2607B12200EF04FD /* Build configuration list for PBXNativeTarget "AvacyCmpSdk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C283B0C25B84796000573F1 /* Debug */,
-				1C283B0D25B84796000573F1 /* Release */,
+				1CBD8C2C2607B12200EF04FD /* Debug */,
+				1CBD8C2D2607B12200EF04FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C283B0E25B84796000573F1 /* Build configuration list for PBXNativeTarget "AvacyCMPTests" */ = {
+		1CBD8C2E2607B12200EF04FD /* Build configuration list for PBXNativeTarget "AvacyCmpSdkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C283B0F25B84796000573F1 /* Debug */,
-				1C283B1025B84796000573F1 /* Release */,
+				1CBD8C2F2607B12200EF04FD /* Debug */,
+				1CBD8C302607B12200EF04FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1C283AEE25B84796000573F1 /* Project object */;
+	rootObject = 1CBD8C0E2607B12100EF04FD /* Project object */;
 }
