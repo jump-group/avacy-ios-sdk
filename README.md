@@ -17,7 +17,7 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 
 
 ```
-pod 'AvacyCmpSdk', '1.0.10'
+pod 'AvacyCmpSdk', '1.0.11'
 ```
 
 Next, run
