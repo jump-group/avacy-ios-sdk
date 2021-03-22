@@ -17,10 +17,10 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 
 
 ```
-pod 'AvacySdk', '~> 1.0'
+pod 'AvacyCmpSdk', '1.0.9'
 ```
 
-Next, run 
+Next, run
 
 ```
 pod update
@@ -29,7 +29,7 @@ pod update
 
 ## Initialize the SDK
 
-Add the following to the application:didFinishLaunchingWithOptions: method in your AppDelegate.  
+Import AvacyCmpSdk and add the following to the application:didFinishLaunchingWithOptions: method in your AppDelegate.  
 Note: BASE_URL is url of the consents page provided by Avacy.
 
 ```
