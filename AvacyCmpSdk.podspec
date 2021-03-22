@@ -115,7 +115,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
   #spec.library = "AvacyCmpSdk"
-  spec.frameworks = "XCTest"
+  #spec.frameworks = "XCTest"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
